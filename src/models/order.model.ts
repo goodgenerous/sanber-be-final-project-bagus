@@ -1,6 +1,9 @@
 import mongoose from "mongoose";
 import UserModel from "./user.model";
 import mail from "@/utils/mail";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const Schema = mongoose.Schema;
 
@@ -62,7 +65,7 @@ OrderSchema.post("save", async function (doc, next) {
     if (user) {
       const content = await mail.render("invoice.ejs", {
         customerName: user.fullName,
-        contactEmail: "bagusdermawanmulya27@zohomail.com",
+        contactEmail: process.env.EMAIL_ZOHO_MAIL,
         orderItems: order.orderItems,
         grandTotal: order.grandTotal,
         year: "2024",

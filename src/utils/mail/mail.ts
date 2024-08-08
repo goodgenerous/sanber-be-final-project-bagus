@@ -1,6 +1,9 @@
 import nodemailer from "nodemailer";
 import ejs from "ejs";
 import path from "path";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const transporter = nodemailer.createTransport({
   service: "Zoho",
@@ -8,8 +11,8 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "bagusdermawanmulya27@zohomail.com",
-    pass: "Mulya212*",
+    user: process.env.EMAIL_ZOHO_MAIL,
+    pass: process.env.PASSWORD_ZOHO_MAIL,
   },
   requireTLS: true,
 });
@@ -24,7 +27,7 @@ const send = async ({
   content: string;
 }) => {
   const result = await transporter.sendMail({
-    from: "bagusdermawanmulya27@zohomail.com",
+    from: process.env.EMAIL_ZOHO_MAIL,
     to,
     subject,
     html: content,
