@@ -50,6 +50,8 @@ DATABASE_URL= "<<fill with your mongoDB database url>>"
 CLOUDINARY_API_KEY= "<<fill with your cloudinary api key>>"
 CLOUDINARY_API_SECRET="<<fill with your cloudinary api secret>>"
 CLOUDINARY_CLOUD_NAME="<<fill with your cloudinary cloud name>>"
+EMAIL_ZOHO_MAIL="<<fill with your zoho email>>"
+PASSWORD_ZOHO_MAIL="<<fill with password on your zoho email>>"
 ```
 
 - Start the server
