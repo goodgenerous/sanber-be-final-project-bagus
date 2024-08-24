@@ -4,7 +4,7 @@ This Final Project E-Commerce API provides a set of endpoints to manage an e-com
 
 #### Deploy version with Railway App:
 
-https://sanber-be-final-project-bagus-production.up.railway.app/
+https://my-e-commerce-api.vercel.app/
 
 ## Features
 
