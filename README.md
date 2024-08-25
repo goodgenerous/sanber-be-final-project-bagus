@@ -2,7 +2,7 @@
 
 This Final Project E-Commerce API provides a set of endpoints to manage an e-commerce by `Bagus Dermawan Mulya`. It allows for the management of products, categories, users, and orders. This API is designed to support the creation, retrieval, updating, and deletion of resources within an e-commerce platform.
 
-#### Deploy version with Railway App:
+#### Deploy version with Vercel App:
 
 https://my-e-commerce-api.vercel.app/
 
